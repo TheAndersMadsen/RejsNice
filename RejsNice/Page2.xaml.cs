@@ -16,15 +16,15 @@ using System.Windows.Shapes;
 namespace RejsNice
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Page1.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Page2 : Page
     {
-        public MainWindow()
+        public Page2()
         {
             InitializeComponent();
-            main.Content = new Page1();
+            
         }
+        
     }
-    
 }

@@ -16,15 +16,18 @@ using System.Windows.Shapes;
 namespace RejsNice
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Page2.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Page1 : Page
     {
-        public MainWindow()
+        public Page1()
         {
             InitializeComponent();
-            main.Content = new Page1();
+        }
+
+        private void SøgKnap_Click(object sender, RoutedEventArgs e)
+        {
+            (Application.Current.MainWindow.FindName("search") as Frame).Source = null;
         }
     }
-    
 }
