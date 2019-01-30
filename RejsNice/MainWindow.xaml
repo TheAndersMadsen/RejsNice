@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RejsNice"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="RejsNice - Din vej til den bedste rejse" Height="450" Width="800">
+    <Grid Background="DarkCyan">
+
+        <TextBox x:Name="FraBox" HorizontalAlignment="Left" Height="23" Margin="199,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="TilBox" HorizontalAlignment="Left" Height="23" Margin="363,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <DatePicker x:Name="DatoBox"  HorizontalAlignment="Left" Margin="199,175,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="#RejsNice" HorizontalAlignment="Left" Margin="311,10,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Yu Gothic UI Semibold" FontSize="36" FontWeight="Bold"/>
+        <Label Content="Find din rejse til den bedste pris!" HorizontalAlignment="Left" Margin="222,63,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Semilight" Foreground="White" FontSize="24"/>
+        <Label Content="Fra:" Foreground="White" HorizontalAlignment="Left" Margin="241,109,0,0" VerticalAlignment="Top"/>
+        <Label Content="Dato:" Foreground="White" HorizontalAlignment="Left" Margin="232,153,0,0" VerticalAlignment="Top"/>
+        <Label Content="Til:" Foreground="White" HorizontalAlignment="Left" Margin="402,109,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.458,0.956"/>
+        <Label Content="Klokkeslet:" Foreground="White" HorizontalAlignment="Left" Margin="382,157,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="SøgKnap" Content="Søg" Background="DarkGreen" Foreground="White" HorizontalAlignment="Left" Margin="607,136,0,0" VerticalAlignment="Top" Width="61" Height="59"/>
+        <ComboBox x:Name="Klokkebox" HorizontalAlignment="Left" Margin="363,177,0,0" VerticalAlignment="Top" Width="120"/>
+        <RadioButton x:Name="AfgangKnap" Content="Afgang" Foreground="White" HorizontalAlignment="Left" Margin="508,141,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="AnkomstKnap" Content="Ankomst" Foreground="White" HorizontalAlignment="Left" Margin="508,177,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
