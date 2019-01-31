@@ -23,7 +23,13 @@ namespace RejsNice
         public MainWindow()
         {
             InitializeComponent();
-            main.Content = new Page1();
+        }
+
+        private void SøgKnap_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 win1 = new Window1();
+            win1.Show();
+            this.Close();
         }
     }
     

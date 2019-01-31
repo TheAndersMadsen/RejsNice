@@ -10,21 +10,25 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace RejsNice
 {
     /// <summary>
-    /// Interaction logic for Page1.xaml
+    /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class Page2 : Page
+    public partial class Window1 : Window
     {
-        public Page2()
+        public Window1()
         {
             InitializeComponent();
-            
         }
-        
+
+        private void BackBut_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow win = new MainWindow();
+            win.Show();
+            this.Close();
+        }
     }
 }
